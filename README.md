@@ -1,5 +1,4 @@
-# Stock-trading-app
-## Stock Trading Data App (Polygon REST API)##
+# Stock-trading-app using Polygon REST API
 
 This project is a Stock trading app that connects to the Polygon.io REST API to fetch stock ticker information. It demonstrates how to work with APIs in financial applications, handle pagination, and structure market data for further analysis.
 
