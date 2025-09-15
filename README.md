@@ -19,7 +19,7 @@ CSV module (to write structured data)
 
 ⚙️ How It Works
 
-Load the Polygon API key from a .env file
-Call the /v3/reference/tickers endpoint to fetch stock tickers
-Store results in memory and handle pagination with next_url
-Save results into tickers.csv with fields
+Load the Polygon API key from a .env file.
+Call the /v3/reference/tickers endpoint to fetch stock tickers.
+Store results in memory and handle pagination with next_url.
+Save results into tickers.csv with fields.
