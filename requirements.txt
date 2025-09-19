@@ -1,4 +1,6 @@
 openai
 requests
 dotenv
-csv
+schedule
+crontab
+
