@@ -18,4 +18,4 @@ schedule.every().minute.do(fetch_and_store_tickers)
 print("Scheduler started... waiting for 12:00 PM job")
 while True:
     schedule.run_pending()
-    time.sleep(10)  # check 5 every minute
+    time.sleep(10)                  # check 10 seconds
