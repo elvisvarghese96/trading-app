@@ -26,5 +26,9 @@ Store results in memory and handle pagination with next_url.
 Save results into tickers.csv with fields.
 
 ## Added CRON JOB
+Scheduled the job for every minute
+
+## Creating table in Snowflake and uploading data 
+Created table Snowflake table and loading data into it
 
 This project is still under development
