@@ -4,6 +4,7 @@ import time
 from dotenv import load_dotenv
 import snowflake.connector
 from datetime import datetime
+import datetime as dt
 
 def fetch_and_store_tickers():
     load_dotenv()

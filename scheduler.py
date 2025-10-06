@@ -15,7 +15,9 @@ schedule.every().minute.do(running_job)
 # Schedule the job for every minute
 schedule.every().minute.do(fetch_and_store_tickers)
 
-print("Scheduler started... waiting for 12:00 PM job")
+print("Scheduler started... waiting for job to start")
 while True:
     schedule.run_pending()
     time.sleep(10)                  # check 10 seconds
+
+
