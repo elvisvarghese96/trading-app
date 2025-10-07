@@ -23,7 +23,7 @@ CRON
 Load the Polygon API key from a .env file.
 Call the /v3/reference/tickers endpoint to fetch stock tickers.
 Store results in memory and handle pagination with next_url.
-Save results into tickers.csv with fields.
+Save results into tickers.csv with fields.- (Now pushed into Snowflake)
 
 ## Added CRON JOB
 Scheduled the job for every minute
