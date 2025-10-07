@@ -15,7 +15,7 @@ Tech Stack
 Python
 Requests (for API calls)
 dotenv (for API key management)
-CSV module (to write structured data)
+Writes the data into Snowflake table
 CRON 
 
 ⚙️ How It Works
@@ -29,6 +29,6 @@ Save results into tickers.csv with fields.
 Scheduled the job for every minute
 
 ## Creating table in Snowflake and uploading data 
-Created table Snowflake table and loading data into it
+Created table Snowflake table and loading data
 
 This project is still under development.
