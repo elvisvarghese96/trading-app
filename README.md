@@ -31,4 +31,4 @@ Scheduled the job for every minute
 ## Creating table in Snowflake and uploading data 
 Created table Snowflake table and loading data into it
 
-This project is still under development
+This project is still under development.
