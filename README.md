@@ -2,21 +2,32 @@
 
 This project is a Stock trading app that connects to the Polygon.io REST API to fetch stock ticker information. It demonstrates how to work with APIs in financial applications, handle pagination, and structure market data for further analysis.
 
-📌 Features
+##  Features
 
-Connects to Polygon.io REST API
-Fetches all active stock tickers
-Handles pagination (retrieves multiple pages of data)
-Extracts structured fields (ticker, name, market, exchange, type, etc.)
-Saves results into a CSV file for analysis
+- **API Integration**: Fetches real-time stock ticker data from Polygon.io
+- **Pagination Handling**: Handles pagination (retrieves multiple pages of data)
+- **CSV Export**: Export data to CSV file format with consistent schema for analysis
+- **Design**: Reusable function for data pipeline integration
 
-Tech Stack
+##  Schema Design
 
-Python
-Requests (for API calls)
-dotenv (for API key management)
-Writes the data into Snowflake table
-CRON 
+The application exports the following fields for each stock ticker:
+
+| Field | Description |
+|-------|-------------|
+| `ticker` | Stock symbol (e.g AAA, AACT etc) |
+| `name` | Company name |
+| `market` | Market type (stocks) |
+| `locale` | Geographic region (us) |
+| `primary_exchange` | Exchange code (e.g., XNAS, XNYS) |
+| `type` | Security type (e.g., CS for Common Stock) |
+| `active` | Trading status (true/false) |
+| `currency_name` | Currency (usd) |
+| `cik` | Central Index Key |
+| `composite_figi` | Composite FIGI identifier |
+| `share_class_figi` | Share class FIGI identifier |
+| `last_updated_utc` | Last update timestamp |
+
 
 ⚙️ How It Works
 
@@ -28,7 +39,13 @@ Save results into tickers.csv with fields.- (Now pushed into Snowflake)
 ## Added CRON JOB
 Scheduled the job for every minute
 
+##  Installation
+
+### Prerequisites
+
+- Python >=3.8
+- pip
+
 ## Creating table in Snowflake and uploading data 
 Created table Snowflake table and loading data
 
-This project is still under development.
