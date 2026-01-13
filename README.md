@@ -46,6 +46,69 @@ Scheduled the job for every minute
 - Python >=3.8
 - pip
 
-## Creating table in Snowflake and uploading data 
-Created table Snowflake table and loading data
+### Setup
+
+1. **Cloning the repository**
+   ```bash
+   git clone https://github.com/elvisvarghese96/trading-app.git
+   cd trading-app.git
+    ```
+
+2. **Creating a virtual environment**
+   ```bash
+   python -m venv stockenv
+   source stockenv/bin/activate    
+   ```
+
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. **Assign environment variables**
+
+    Add your poligon.io API key
+    ```bash
+    POLYGON_API_KEY='Enter_API_Key'
+    ```
+5. **For creating a Poligon API Key**
+
+    Visit [Poligon.io](https://polygon.io/)
+    Create a free account
+
+
+## Running the script
+```bash
+Execute the python scritp.py
+```
+This will perform the following:
+
+-Fetches real-time stock ticker data from Polygon.io
+-Handles pagination (retrieves multiple pages of data)
+-Export data to CSV file format with consistent schema for analysis
+-Reusable function for data pipeline integration
+
+## Project Structure
+```
+polygon-snowflake-pipeline/
+├── data/                   # (Optional) Local storage for CSV exports or logs
+├── src/
+│   ├── __init__.py
+│   └── main.py             # Your provided script (renamed for clarity)
+├── .env                    # Environment variables (API keys, Snowflake creds)
+├── .gitignore              # To prevent pushing sensitive .env to GitHub
+├── requirements.txt        # Python dependencies
+└── README.md               # Project documentation
+```
+
+##  Data Pipeline Integration
+
+This project demonstrates key data pipeline concepts:
+
+- **Data Extraction**: Fetches data from external API
+- **Data Processing**: Handles pagination and data transformation
+- **Data Storage**: Exports to CSV format/Snowflake Db
+- **Scheduling**: Automated execution
+- **Error Handling**: Robust API response handling
+
+
 
