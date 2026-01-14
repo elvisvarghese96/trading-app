@@ -72,8 +72,8 @@ Scheduled the job for every minute
     ```
 5. **For creating a Poligon API Key**
 
-    Visit [Poligon.io](https://polygon.io/)
-    Create a free account
+    - Visit [Poligon.io](https://polygon.io/)
+    - Create a free account
 
 
 ## Running the script
@@ -82,10 +82,10 @@ Execute the python scritp.py
 ```
 This will perform the following:
 
--Fetches real-time stock ticker data from Polygon.io
--Handles pagination (retrieves multiple pages of data)
--Export data to CSV file format with consistent schema for analysis
--Reusable function for data pipeline integration
+- Fetches real-time stock ticker data from Polygon.io
+- Handles pagination (retrieves multiple pages of data)
+- Export data to CSV file format with consistent schema for analysis
+- Reusable function for data pipeline integration
 
 ## Project Structure
 ```
