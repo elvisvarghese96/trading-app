@@ -109,7 +109,7 @@ This project demonstrates key data pipeline concepts:
 
 
 ## CRON JOB
-Scheduled the job 9 am
+Scheduled the job at 9 am.
 
 ```bash
 # Run daily at 9 AM
