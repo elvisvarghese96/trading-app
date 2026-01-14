@@ -36,9 +36,6 @@ Call the /v3/reference/tickers endpoint to fetch stock tickers.
 Store results in memory and handle pagination with next_url.
 Save results into tickers.csv with fields.- (Now pushed into Snowflake)
 
-## Added CRON JOB
-Scheduled the job for every minute
-
 ##  Installation
 
 ### Prerequisites
@@ -111,4 +108,10 @@ This project demonstrates key data pipeline concepts:
 - **Error Handling**: Robust API response handling
 
 
+## CRON JOB
+Scheduled the job 9 am
 
+```bash
+# Run daily at 9 AM
+0 9 * * * cd /path/to/trading-app.git && python script.py
+```
